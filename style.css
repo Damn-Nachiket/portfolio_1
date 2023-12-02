@@ -1,6 +1,9 @@
 @font-face {
     font-family: 'Mazius'; /* This can be any name you choose */
+    font-family:'Gilroy';
     src: url("url-of-the-font") format('woff2'); 
+    src:url("webfontkit/gilroy-extrabold-webfont.woff") format("woff");
+    src:url("webfontkit/gilroy-light-webfont.woff") format("woff");
 }
 
 *{
