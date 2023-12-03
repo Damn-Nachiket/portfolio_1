@@ -3,7 +3,7 @@
     font-family:'Gilroy';
     src: url("url-of-the-font") format('woff2'); 
     src:url("webfontkit/gilroy-extrabold-webfont.woff") format("woff");
-    src:url("webfontkit/gilroy-light-webfont.woff") format("woff");
+    /* src:url("webfontkit/gilroy-light-webfont.woff") format("woff"); */
 }
 
 *{
@@ -22,7 +22,7 @@ html,body{
 body::-webkit-scrollbar{
     display: block;
     width: 0.7vw;
-    background-color: #d1d1d1;
+    background-color: #f2f2f2;
 }
 
 body::-webkit-scrollbar-thumb{
@@ -106,7 +106,7 @@ body::-webkit-scrollbar-thumb{
 #home{
     width: 100%;
     height: 190vh;
-    background-color :#d1d1d1;
+    background-color :#f2f2f2;
 }
 
 #home #nav{
@@ -212,7 +212,7 @@ path ,polyline{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 7vw;
+    padding: 5vw 7vw;
 }
 
 #imagery #imgleft{
@@ -225,7 +225,7 @@ path ,polyline{
 #imagery #imgleft h1{
     /* font-family :monospace; */
     font-size: 1.7vw;
-    font-weight: 700;
+    font-weight: 500;
     color : #333;
 }
 
@@ -242,8 +242,8 @@ path ,polyline{
     align-items: center;
     position: relative;
     width: 60%;
-    height: 300px;
-    margin-top: 20vw;
+    height:40vw;
+    margin-top: 5vw;
 }
 
 #imgright .imgcntr{
@@ -280,42 +280,54 @@ path ,polyline{
     background-position: center;
 }
 
-#footer{
-    width: 100%;
-    height: 2.5vw;
-    background-color: #d1d1d1;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* #work{
+ #work{
+    padding-top: 150px;
     position: relative;
     width: 100%;
-    min-height: 70vh;
-    background-color: #fff7f7;
-}
+    min-height: 60vh;
+    background-color: #f2f2f2;
+} 
 
 #work::before{
     position: absolute;
-    top: -75px;
+    top: -2vw;
     transform: rotate(-180deg);
     content:"";
     width: 100%;
     height: 100px;
-    background-image: url(https://abhishekjha.me/rip.f6d7c4dd.svg);
+    background-image: url(Image/grey1.svg);
     background-size: cover;
-} */
+} 
+
+#work .workrow{
+    padding: 0 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.workrow h1{
+    font-size: 5vw;
+    display: flex;
+    align-items:baseline;
+}
+
+.workrow h1 span{
+    color: #F68B08;
+    font-family: 'Mazius';
+    font-style: italic  ;
+    font-weight: 900;
+}
+.workrow h1 .mini{
+    margin-left: 1vw;
+    font-size: 2vw;
+}
+
+.o-ui-arrow{
+    width: 5vw;
+    transform: rotate(90deg);
+}
+
+.o-ui-arrow path{
+    stroke: #F68B08;
+}
